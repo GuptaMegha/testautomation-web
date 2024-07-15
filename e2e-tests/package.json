@@ -1,0 +1,23 @@
+{
+    "name": "@abn/amro-e2e-tests",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "Test E2E functionality on ABN AMRO Login Page",
+    "scripts": {
+        "test": "npx playwright test --project=chromium",
+        "test-head": "npx playwright test --project=chromium --headed",
+        "test-firefox": "npx playwright test --project=firefox",
+        "test-firefox-head": "npx playwright test --project=firefox --headed",
+        "test-iphone": "npx playwright test --project=iphone",
+        "test-iphone-head": "npx playwright test --project=iphone --headed",
+        "test-android": "npx playwright test --project=android",
+        "test-android-head": "npx playwright test --project=android --headed",
+        "show-report": "npx playwright show-report"
+    },
+    "author": "Megha",
+    "devDependencies": {
+        "@playwright/test": "1.45",
+        "@types/node": "^20.12.12",
+        "typescript": "5.2.2"
+    }
+}
